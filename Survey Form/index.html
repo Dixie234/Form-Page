@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+  </head>
+<body>
+<h1 id="title">Survey Form</h1>
+<form id="survey-form" action="index.html" method="post">
+  <p id="description">Lets see how I can improve my Coding</p>
+<p>
+  <label id="name-label" for="name">
+    Name: <input id="name" type="text" required name="name" value="" placeholder="Enter your name" >
+  </label>
+</p>
+<p>
+  <label id="email-label" for="name">
+    Email: <input id="email" type="email" required name="name" value="" placeholder="Enter your Email" >
+  </label>
+</p>
+<p>
+  <label id="number-label" for="name">
+    Age: <input id="number" min="1" max="100" type="number" required name="name" value="" placeholder="Enter your age" >
+  </label>
+</p>
+  <p id="dropdown">Whats the fastest way to learn to code?
+    <select class="list" name="list">
+      <option value="code-camp">Code-Camp</option>
+      <option value="uni">University</option>
+      <option value="youtube">YouTube Videos</option>
+      <option value="freecodecamp">FreeCodeCamp</option>
+  </select>
+  </p>
+  <p>How likely would you recommend coding as a career?
+    <label for="radio">
+        <input id = "radio" type="radio" name="recomlist" value="Likely">Very Likely
+        <input id = "radio" type="radio" name="recomlist" value="Likely">Quite Likely
+        <input id = "radio" type="radio" name="recomlist" value="Likely">Unlikely
+    </label>
+  </p>
+  <p id="dropdown">What do you like most about coding?
+    <select class="coding" name="coding">
+      <option disabled selected value>Select an option</option>
+      <option value="problem-solving">Problem Solving</option>
+      <option value="structuring">Structuring</option>
+      <option value="money">The Money</option>
+      <option value="innovation">Innovation</option>
+  </select>
+  </p>
+  <p>Best place to start when learning how to code (Check all that apply):
+    <label for="projects">Front-End Development
+      <input id="projects" type="checkbox" name="front-end" value="Front-end-development">
+    </label>
+    <label for="projects">Back-End Development
+      <input id="projects" type="checkbox" name="back-end" value="Back-end-development">
+    </label>
+    <label for="projects">Data Visualisation
+      <input id="projects" type="checkbox" name="datavisualisation" value="datavisualisation">
+    </label>
+    <label for="projects">Computer Science
+      <input id="projects" type="checkbox" name="compsci" value="compsci">
+    </label>
+    <label for="projects">Community Forums
+      <input id="projects" type="checkbox" name="forums" value="forums">
+    </label>
+  </p>
+  <p>Any further Comments? <textarea name="comments" rows="4" cols="40"></textarea></p>
+
+
+<button id="submit" type="submit" name="Submit">Submit</button>
+</form>
+
+</body>
+</html>
